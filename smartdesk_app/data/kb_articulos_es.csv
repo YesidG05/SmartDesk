@@ -1,0 +1,165 @@
+﻿kb_id,titulo,categoria,subcategoria,servicio_afectado,sintomas_tipicos,causa_raiz,procedimiento,grupo_responsable
+KB-ACC-001,Cómo resolver: Contraseña o cuenta bloqueada,Accesos y Cuentas,Contraseña o cuenta bloqueada,Active Directory,"No puedo iniciar sesión en mi computador, dice que la contraseña es incorrecta. | Mi cuenta de red quedó bloqueada después de varios intentos fallidos. | Olvidé mi contraseña y necesito restablecerla para poder entrar al equipo. | Al entrar me aparece el mensaje de que mi cuenta ha sido deshabilitada temporalmente. | Mi contraseña venció y el sistema no me deja cambiarla, queda en bucle.",Bloqueo automático por intentos fallidos o contraseña expirada en Active Directory.,"1. Validar la identidad del usuario (preguntas de verificación o confirmación con el jefe directo).
+2. Ubicar la cuenta en Active Directory y revisar si está bloqueada, deshabilitada o con contraseña expirada.
+3. Desbloquear la cuenta y asignar una contraseña temporal con cambio obligatorio en el próximo inicio de sesión.
+4. Confirmar que el usuario ingresa y revisar si algún celular o equipo guarda la contraseña anterior (causa común de re-bloqueos).",Soporte Nivel 1
+KB-ACC-002,Cómo resolver: Autenticación multifactor (MFA),Accesos y Cuentas,Autenticación multifactor (MFA),Servicio MFA,No me llega el código de verificación al celular para ingresar al correo. | Cambié de teléfono y ya no puedo aprobar la autenticación de dos factores. | La app Authenticator me dice código inválido aunque lo escribo bien. | Me pide verificar mi identidad con un método que ya no tengo.,Método MFA desvinculado por cambio de dispositivo o desfase de hora en el móvil.,"1. Validar la identidad del usuario por un segundo canal.
+2. Revisar los métodos MFA registrados en la consola de identidad.
+3. Restablecer los métodos de autenticación para forzar un nuevo registro.
+4. Guiar al usuario para registrar el nuevo dispositivo y verificar que la hora del móvil esté en automático.
+5. Confirmar el acceso al correo con el nuevo método.",Accesos e Identidad
+KB-ACC-003,Cómo resolver: Permisos sobre carpetas o recursos,Accesos y Cuentas,Permisos sobre carpetas o recursos,Servidor de archivos,"No tengo acceso a la carpeta compartida de mi área, me sale acceso denegado. | Necesito permisos de escritura en la carpeta del proyecto, solo puedo leer. | Mi nuevo rol requiere acceso a la carpeta de Finanzas y no me deja entrar. | Me aparece que no tengo permiso para acceder a este recurso al abrir la unidad de red.",El usuario no pertenece al grupo de seguridad que otorga acceso al recurso.,"1. Confirmar la aprobación del propietario del recurso o del jefe directo.
+2. Identificar el grupo de seguridad asociado a la carpeta.
+3. Agregar al usuario al grupo con el nivel mínimo necesario (lectura o escritura).
+4. Pedir cerrar sesión y volver a entrar (o ejecutar gpupdate /force) para refrescar el token.
+5. Validar el acceso y dejar registrada la aprobación en el ticket.",Accesos e Identidad
+KB-ACC-004,Cómo resolver: Alta de usuario nuevo,Accesos y Cuentas,Alta de usuario nuevo,Active Directory,Ingresó un colaborador nuevo y no tiene usuario ni correo creados. | Empleado nuevo sin acceso a ninguna aplicación en su primer día. | Necesito la creación de usuario y equipo para una persona que inicia el lunes.,Solicitud de onboarding incompleta o no registrada por Recursos Humanos con anticipación.,"1. Verificar la solicitud formal de RRHH con datos y fecha de ingreso.
+2. Crear la cuenta en Active Directory y el buzón de correo según la plantilla del cargo.
+3. Asignar licencias y grupos de acceso del perfil.
+4. Preparar el equipo con la imagen corporativa.
+5. Entregar credenciales de forma segura y confirmar el primer inicio de sesión.",Accesos e Identidad
+KB-HW-001,Cómo resolver: Portátil o equipo no enciende,Hardware,Portátil o equipo no enciende,Equipo de usuario,"Mi portátil no enciende, ya probé con el cargador y no pasa nada. | El computador se quedó en pantalla negra y no responde a ningún botón. | La laptop enciende pero se apaga sola a los pocos minutos. | El equipo no carga la batería aunque está conectado al cargador.","Falla del adaptador de corriente, batería degradada o sobrecalentamiento.","1. Verificar cargador, toma eléctrica y luces indicadoras.
+2. Realizar descarga residual (desconectar todo y mantener presionado el botón de encendido 30 segundos).
+3. Probar con adaptador o batería de reemplazo.
+4. Si no responde, ejecutar el diagnóstico de hardware del fabricante y registrar el código de error.
+5. Entregar equipo de contingencia mientras se repara o se reemplaza la pieza.",Soporte Nivel 2
+KB-HW-002,Cómo resolver: Impresora no imprime o atasco,Hardware,Impresora no imprime o atasco,Impresora de red,"La impresora del piso no imprime, los trabajos se quedan en cola. | Hay papel atascado en la impresora y muestra un error en el panel. | Las hojas salen en blanco o con rayas. | No me aparece la impresora de la oficina en la lista para imprimir.","Cola de impresión bloqueada, atasco de papel, tóner agotado o controlador desactualizado.","1. Revisar el estado físico (papel, atasco, nivel de tóner).
+2. Cancelar los documentos en cola y reiniciar el servicio Cola de impresión (Print Spooler).
+3. Reiniciar la impresora.
+4. Reinstalar o actualizar el controlador y volver a agregar la impresora.
+5. Imprimir una página de prueba y confirmar con el usuario.",Soporte Nivel 1
+KB-HW-003,Cómo resolver: Monitor o pantalla sin imagen,Hardware,Monitor o pantalla sin imagen,Equipo de usuario,El monitor externo no muestra imagen. | Mi segunda pantalla dejó de ser detectada por el equipo. | La pantalla parpadea todo el tiempo y me duelen los ojos. | Se ve una línea vertical en la pantalla y los colores están raros.,"Cable o adaptador defectuoso, configuración de pantalla incorrecta o controlador gráfico desactualizado.","1. Revisar conexiones y probar otro cable o puerto (HDMI/DisplayPort).
+2. Abrir la configuración de pantalla y detectar o extender pantallas (Win+P).
+3. Actualizar o reinstalar el controlador gráfico.
+4. Probar el monitor en otro equipo para descartar falla del panel.
+5. Reemplazar el cable o el monitor según el resultado.",Soporte Nivel 1
+KB-HW-004,"Cómo resolver: Periféricos (mouse, teclado, cámara)",Hardware,"Periféricos (mouse, teclado, cámara)",Equipo de usuario,El mouse inalámbrico no responde. | Varias teclas del teclado dejaron de funcionar. | La cámara web y la diadema no son detectadas por el computador. | El dock USB no reconoce los dispositivos conectados.,"Batería agotada, receptor desconectado, puerto USB o controlador con falla.","1. Cambiar las baterías y reconectar el receptor en otro puerto USB.
+2. Probar el periférico en otro equipo.
+3. Reinstalar el controlador desde el Administrador de dispositivos.
+4. Reemplazar el periférico desde el stock y actualizar el inventario.",Soporte Nivel 1
+KB-HW-005,Cómo resolver: Equipo lento o disco lleno,Hardware,Equipo lento o disco lleno,Equipo de usuario,"Mi computador está extremadamente lento, tarda varios minutos en abrir un programa. | Me sale alerta de que el disco C está casi lleno. | El equipo se congela cuando tengo varias aplicaciones abiertas. | Todo se pone lento desde que arranco el equipo en la mañana.","Disco casi lleno, exceso de programas en el inicio o memoria RAM insuficiente.","1. Revisar el uso de CPU, memoria y disco en el Administrador de tareas.
+2. Liberar espacio (limpieza de disco, archivos temporales, descargas).
+3. Deshabilitar los programas innecesarios del inicio.
+4. Ejecutar un análisis antimalware para descartar infección.
+5. Si persiste, solicitar ampliación de RAM o cambio a disco SSD.",Soporte Nivel 1
+KB-SW-001,Cómo resolver: Microsoft Office con fallas,Software,Microsoft Office con fallas,Microsoft 365,Excel se cierra solo cada vez que abro un archivo grande. | Word dice que el documento está dañado y no me deja abrirlo. | Office me pide activar el producto y no me deja editar. | PowerPoint se queda en no responde al abrir presentaciones.,"Instalación de Office corrupta, complemento defectuoso o licencia no activada.","1. Iniciar la aplicación en modo seguro para descartar complementos.
+2. Ejecutar la Reparación rápida de Office desde Aplicaciones instaladas.
+3. Si persiste, ejecutar la Reparación en línea.
+4. Verificar que la licencia de Microsoft 365 esté asignada al usuario y reiniciar sesión para reactivar.
+5. Como último recurso, reinstalar Office.",Soporte Nivel 1
+KB-SW-002,Cómo resolver: Instalación de software,Software,Instalación de software,Gestión de software,Necesito instalar Adobe Acrobat Pro en mi equipo. | Requiero Visual Studio Code para un proyecto y no tengo permisos de administrador. | Solicito instalación de un programa de diseño para el área de marketing. | Necesito que me instalen el software de conexión del cliente para poder trabajar.,Software no incluido en la imagen base; requiere aprobación y permisos de administrador.,"1. Validar la aprobación del jefe directo y la disponibilidad de licencia.
+2. Revisar que el software esté en el catálogo autorizado (si no, escalar a Seguridad TI).
+3. Instalar desde el Centro de software o con un paquete autorizado.
+4. Registrar la instalación en el inventario de software.
+5. Confirmar el funcionamiento con el usuario.",Soporte Nivel 1
+KB-SW-003,Cómo resolver: Navegador y certificados,Software,Navegador y certificados,Portal interno,"No puedo entrar al portal interno, el navegador muestra error de certificado. | Chrome dice que mi conexión no es privada al abrir el sistema de la empresa. | El sitio de la intranet marca advertencia de seguridad y no me deja continuar.","Certificado raíz corporativo no instalado, fecha u hora incorrecta en el equipo o certificado vencido en el servidor.","1. Verificar fecha, hora y zona horaria del equipo.
+2. Forzar la actualización de políticas (gpupdate /force) para instalar el certificado corporativo.
+3. Limpiar la caché y el estado SSL del navegador.
+4. Probar en otro equipo para descartar un certificado vencido en el servidor.
+5. Si el certificado del servidor está vencido, escalar a Infraestructura para su renovación.",Soporte Nivel 2
+KB-SW-004,Cómo resolver: Falla de actualización de Windows,Software,Falla de actualización de Windows,Sistema operativo,"La actualización de Windows falla y el equipo reinicia en bucle. | Windows se queda en preparando actualizaciones y no avanza. | Después de actualizar, el equipo arrancó con error y no puedo entrar al escritorio.",Componentes de Windows Update corruptos o actualización incompatible con un controlador.,"1. Ejecutar el solucionador de problemas de Windows Update.
+2. Reiniciar los servicios wuauserv y bits y limpiar la carpeta SoftwareDistribution.
+3. Ejecutar DISM /RestoreHealth y sfc /scannow.
+4. Desinstalar la actualización problemática si el equipo no arranca.
+5. Reimagen del equipo como último recurso, previa copia de los datos.",Soporte Nivel 2
+KB-NET-001,Cómo resolver: VPN: falla individual,Redes y Conectividad,VPN: falla individual,VPN corporativa,"No puedo conectarme a la VPN desde mi casa, se queda en conectando. | La VPN me muestra error de tiempo de espera agotado. | Me conecto a la VPN pero no puedo acceder a ningún recurso interno. | El cliente VPN rechaza mis credenciales aunque son correctas.","Credenciales o certificado de cliente vencidos, bloqueo de puertos en la red doméstica o cliente VPN desactualizado.","1. Verificar credenciales, MFA y que la cuenta no esté bloqueada.
+2. Confirmar la versión del cliente VPN y actualizarla.
+3. Probar desde otra red (por ejemplo datos móviles) para descartar bloqueo del proveedor o del router.
+4. Revisar los logs de autenticación en el concentrador VPN.
+5. Reinstalar el cliente y el perfil de conexión si persiste.",Redes y Comunicaciones
+KB-NET-002,Cómo resolver: VPN: caída masiva,Redes y Conectividad,VPN: caída masiva,VPN corporativa,"Varios compañeros en teletrabajo no pueden conectarse a la VPN desde hace un rato. | La VPN está caída, nadie del equipo remoto logra entrar. | Se cayó la VPN para todos los que trabajamos desde casa.","Saturación o caída del concentrador VPN, o falla del servicio de autenticación.","1. Confirmar el alcance (varios usuarios y varias redes).
+2. Revisar el estado del concentrador o firewall (CPU, sesiones, licencias).
+3. Revisar el servicio de autenticación (RADIUS/MFA).
+4. Reiniciar el servicio o conmutar al nodo de respaldo.
+5. Comunicar el estado a los usuarios y validar la reconexión.
+6. Abrir un problema para analizar la causa raíz.",Redes y Comunicaciones
+KB-NET-003,Cómo resolver: WiFi intermitente o sin conexión,Redes y Conectividad,WiFi intermitente o sin conexión,Red inalámbrica corporativa,"El WiFi de la oficina se cae constantemente. | No logro conectarme a la red WiFi corporativa, solo veo la de invitados. | Internet va muy lento en el piso 3 cuando uso el WiFi. | Mi laptop se desconecta del WiFi cada pocos minutos.","Interferencia o cobertura deficiente en el punto de acceso, o perfil WiFi corrupto en el equipo.","1. Olvidar la red y volver a conectar con las credenciales corporativas.
+2. Verificar el perfil o certificado WiFi y actualizar el controlador de la tarjeta inalámbrica.
+3. Consultar en la controladora el punto de acceso asociado (señal, canal, clientes).
+4. Si hay saturación o interferencia, ajustar canal o potencia, o reiniciar el punto de acceso.
+5. Documentar la zona de baja cobertura para revisión del sitio.",Redes y Comunicaciones
+KB-NET-004,Cómo resolver: Sede sin conectividad,Redes y Conectividad,Sede sin conectividad,Enlace de internet,"Toda la oficina está sin internet desde hace 20 minutos. | Caída total de conectividad en la sede, nadie puede navegar ni usar aplicaciones en la nube. | Se cayó el enlace de internet de la sucursal y no podemos operar.",Falla del enlace del proveedor de internet (ISP) o del equipo de borde (router o firewall).,"1. Confirmar el alcance y la sede afectada.
+2. Revisar el estado del router o firewall y las luces del enlace.
+3. Abrir caso con el ISP indicando número de circuito y hora de la caída.
+4. Activar el enlace de respaldo o 4G si está disponible.
+5. Comunicar a los usuarios y actualizar el estado cada 30 minutos.
+6. Validar el restablecimiento y registrar el tiempo de caída para el informe del proveedor.",Redes y Comunicaciones
+KB-NET-005,Cómo resolver: Punto de red sin conexión,Redes y Conectividad,Punto de red sin conexión,Cableado estructurado,El punto de red de mi escritorio no tiene conexión. | Al conectar el cable aparece cable de red desconectado. | Me cambiaron de puesto y el punto de red no funciona.,"Patch cord o puerto del switch defectuoso, o puerto deshabilitado.","1. Probar con otro cable de red.
+2. Identificar el punto en el patch panel y el puerto del switch.
+3. Verificar que el puerto esté habilitado y en la VLAN correcta.
+4. Mover a un puerto libre o reemplazar el patch cord.
+5. Certificar el punto y confirmar la conectividad.",Redes y Comunicaciones
+KB-MAIL-001,Cómo resolver: Buzón de correo lleno,Correo y Colaboración,Buzón de correo lleno,Exchange Online,Me aparece que mi buzón está lleno y no puedo enviar ni recibir correos. | Outlook indica que superé la cuota de almacenamiento. | Dejé de recibir correos y creo que es por el espacio del buzón.,Cuota del buzón alcanzada.,"1. Revisar el tamaño actual del buzón y las carpetas más pesadas.
+2. Vaciar Elementos eliminados y Correo no deseado.
+3. Archivar correos antiguos con el archivado en línea o un archivo PST.
+4. Si el cargo lo justifica, solicitar aprobación para ampliar la cuota.
+5. Verificar el envío y la recepción.",Soporte Nivel 1
+KB-MAIL-002,Cómo resolver: Correos no llegan o rebotan,Correo y Colaboración,Correos no llegan o rebotan,Exchange Online,No me están llegando los correos de un cliente externo. | Mis correos rebotan con error 550 al enviar a ciertos destinatarios. | Los correos que envío llegan a la carpeta de spam del destinatario. | Esperaba un correo importante y no aparece ni en spam.,"Mensajes bloqueados o en cuarentena por el filtro antispam, o problemas de SPF/DKIM.","1. Obtener el mensaje de rebote o los encabezados del correo.
+2. Revisar la traza de mensajes en la consola de administración de correo.
+3. Liberar de cuarentena y agregar el remitente a la lista segura tras validarlo.
+4. Si es dominio propio, revisar los registros SPF, DKIM y DMARC.
+5. Confirmar con el usuario que el correo llega.",Soporte Nivel 2
+KB-MAIL-003,Cómo resolver: Outlook no sincroniza,Correo y Colaboración,Outlook no sincroniza,Microsoft Outlook,Outlook se queda en intentando conectar y no descarga correos nuevos. | Outlook me pide la contraseña cada pocos minutos. | El calendario no se actualiza con las reuniones nuevas. | Outlook dice desconectado pero tengo internet.,Perfil de Outlook corrupto o credenciales en caché obsoletas.,"1. Verificar que no esté activado Trabajar sin conexión.
+2. Limpiar las credenciales guardadas en el Administrador de credenciales.
+3. Crear un nuevo perfil de Outlook y recrear el archivo OST.
+4. Validar la sincronización de correo y calendario.",Soporte Nivel 1
+KB-COL-001,Cómo resolver: Microsoft Teams: audio o video,Correo y Colaboración,Microsoft Teams: audio o video,Microsoft Teams,En Teams no me escuchan cuando hablo en las reuniones. | La cámara no se activa en Teams. | Teams se congela o se cae cuando comparto pantalla. | No escucho a los demás en la reunión aunque mi volumen está alto.,"Dispositivo de audio o video mal seleccionado, o permisos de privacidad bloqueados.","1. En Teams, seleccionar el micrófono, parlante y cámara correctos en Configuración > Dispositivos.
+2. Revisar los permisos de micrófono y cámara en la configuración de privacidad del sistema.
+3. Cerrar Teams por completo y limpiar su caché.
+4. Actualizar el cliente o probar desde la versión web.
+5. Confirmar con una llamada de prueba.",Soporte Nivel 1
+KB-APP-001,Cómo resolver: ERP lento o con tiempos de espera,Aplicaciones Corporativas,ERP lento o con tiempos de espera,ERP,"El ERP está muy lento, cada transacción tarda minutos. | Me sale tiempo de espera agotado al guardar pedidos en el ERP. | El sistema contable no carga los reportes de cierre. | El ERP se queda congelado al consultar inventarios.",Consultas bloqueantes en la base de datos o saturación de recursos del servidor de aplicaciones.,"1. Confirmar el alcance (un usuario o varios) y el módulo afectado.
+2. Revisar sesiones bloqueadas y consultas de larga duración en la base de datos.
+3. Liberar bloqueos y, de ser necesario, reiniciar el servicio de aplicación en ventana controlada.
+4. Coordinar con el DBA la revisión de índices y estadísticas.
+5. Monitorear los tiempos de respuesta y documentar la causa.",Aplicaciones Corporativas
+KB-APP-002,Cómo resolver: Error al facturar o contabilizar,Aplicaciones Corporativas,Error al facturar o contabilizar,ERP,"No puedo emitir facturas, aparece error de comunicación con el servicio de facturación electrónica. | El sistema no me deja cerrar la orden de compra, muestra datos inconsistentes. | Al contabilizar el pedido sale un error y no se genera el documento.","Servicio de facturación electrónica no disponible, certificado vencido o datos maestros incompletos.","1. Reproducir el error y capturar el mensaje exacto.
+2. Verificar el estado del servicio del proveedor de facturación.
+3. Revisar la vigencia del certificado de firma.
+4. Completar o corregir los datos maestros del tercero o del producto.
+5. Reintentar el envío y validar que el documento quede aceptado.
+6. Si persiste, escalar al proveedor con el log del error.",Aplicaciones Corporativas
+KB-APP-003,Cómo resolver: CRM: acceso o permisos,Aplicaciones Corporativas,CRM: acceso o permisos,CRM,No puedo ver las oportunidades de mi equipo en el CRM. | El CRM muestra pantalla en blanco después de iniciar sesión. | No me deja editar los clientes asignados a mi zona.,"Rol o perfil sin los permisos requeridos, o caché y sesión del navegador corruptas.","1. Verificar el perfil y el rol del usuario en el CRM.
+2. Ajustar el rol previa aprobación del responsable del área.
+3. Limpiar caché y cookies o probar en otro navegador.
+4. Cerrar sesión, volver a ingresar y validar el acceso a los registros.",Aplicaciones Corporativas
+KB-APP-004,Cómo resolver: Reportes y dashboards desactualizados,Aplicaciones Corporativas,Reportes y dashboards desactualizados,Plataforma BI,El dashboard de ventas no se actualiza desde ayer. | Power BI muestra error de credenciales al refrescar los datos. | Los reportes gerenciales tienen cifras desactualizadas.,Credenciales de la fuente de datos vencidas o falla en la carga programada (ETL).,"1. Revisar el historial de actualización del conjunto de datos.
+2. Actualizar las credenciales de la fuente en el gateway.
+3. Relanzar la actualización manualmente.
+4. Revisar el job ETL que alimenta el modelo y corregir los errores.
+5. Validar las cifras con el usuario.",Aplicaciones Corporativas
+KB-SEC-001,Cómo resolver: Correo sospechoso (phishing),Seguridad de la Información,Correo sospechoso (phishing),Correo corporativo,"Recibí un correo sospechoso pidiendo mis credenciales, creo que es phishing. | Llegó un mensaje de un supuesto banco con un enlace extraño, no hice clic. | Hice clic en un enlace de un correo raro e ingresé mi contraseña. | Varios compañeros recibieron el mismo correo extraño con un adjunto.",Campaña de phishing o ingeniería social.,"1. Indicar al usuario que no interactúe con el mensaje ni lo reenvíe.
+2. Extraer encabezados, URL y adjuntos para análisis.
+3. Bloquear el remitente y la URL en el gateway de correo y purgar el mensaje de todos los buzones.
+4. Si el usuario ingresó credenciales: forzar cambio de contraseña, revocar sesiones y revisar inicios de sesión anómalos.
+5. Registrar el incidente de seguridad y reforzar la concientización.",Seguridad TI
+KB-SEC-002,Cómo resolver: Malware o equipo infectado,Seguridad de la Información,Malware o equipo infectado,Antivirus / EDR,"El antivirus detectó una amenaza en mi equipo y no logra eliminarla. | Aparecen ventanas emergentes raras y el equipo está lentísimo, creo que tiene virus. | Mis archivos aparecen con una extensión extraña y no puedo abrirlos. | El equipo muestra un mensaje pidiendo un pago para recuperar los archivos.",Malware descargado desde un sitio o adjunto no confiable.,"1. Aislar el equipo de la red de inmediato.
+2. Ejecutar un análisis completo con la herramienta EDR y recolectar evidencias.
+3. Contener y erradicar la amenaza; revisar posible movimiento lateral hacia otros equipos.
+4. Restaurar los archivos desde respaldo si hubo cifrado, o reimagen del equipo.
+5. Documentar la causa raíz y reforzar los controles.",Seguridad TI
+KB-SEC-003,Cómo resolver: Dispositivo perdido o robado,Seguridad de la Información,Dispositivo perdido o robado,Gestión de dispositivos (MDM),Me robaron el portátil de la empresa en el transporte. | Perdí mi celular corporativo y tiene acceso al correo. | Dejé la tablet de la empresa en un taxi.,Pérdida o robo de un dispositivo corporativo.,"1. Bloquear o borrar remotamente el dispositivo desde la consola MDM.
+2. Revocar sesiones y tokens de acceso y forzar el cambio de contraseña.
+3. Verificar si el disco estaba cifrado (BitLocker) para evaluar la exposición de datos.
+4. Registrar la denuncia y notificar al área de activos para la reposición.
+5. Documentar el incidente.",Seguridad TI
+KB-INF-001,Cómo resolver: Servidor de archivos caído o lento,Infraestructura y Servidores,Servidor de archivos caído o lento,Servidor de archivos,"No se puede acceder a la unidad de red compartida, nadie del área puede abrir archivos. | La carpeta compartida tarda minutos en abrir. | El servidor de archivos no responde.",Servicio de archivos detenido o volumen del servidor sin espacio.,"1. Confirmar el alcance y el recurso afectado.
+2. Revisar el estado de la máquina, los servicios y el espacio en disco del servidor.
+3. Liberar espacio o ampliar el volumen.
+4. Reiniciar el servicio de servidor de archivos.
+5. Validar el acceso con los usuarios y revisar alertas para prevenir recurrencia.",Infraestructura y Servidores
+KB-INF-002,Cómo resolver: Respaldo fallido,Infraestructura y Servidores,Respaldo fallido,Plataforma de respaldo,Llegó una alerta de que el respaldo nocturno del servidor falló. | El job de respaldo de la base de datos terminó con errores tres días seguidos. | No se completó la copia de seguridad programada.,Espacio insuficiente en el repositorio de respaldo o agente sin conectividad.,"1. Revisar el log del job y el error reportado.
+2. Verificar el espacio del repositorio y la conectividad del agente.
+3. Relanzar el respaldo manualmente.
+4. Validar la integridad con una prueba de restauración.
+5. Ajustar la política de retención si el espacio es el problema.",Infraestructura y Servidores
+KB-INF-003,Cómo resolver: Base de datos lenta o sin conexión,Infraestructura y Servidores,Base de datos lenta o sin conexión,Base de datos SQL,"La aplicación no conecta con la base de datos, error de conexión. | Consultas muy lentas en la base de datos de producción. | La base de datos rechaza conexiones por límite de sesiones.","Bloqueos, falta de memoria o saturación del número de conexiones.","1. Confirmar las aplicaciones afectadas y la hora de inicio.
+2. Revisar el uso de CPU, memoria y las sesiones activas.
+3. Identificar y terminar las sesiones bloqueantes.
+4. Ajustar los parámetros de memoria o conexiones según el caso y reiniciar en ventana controlada.
+5. Solicitar al equipo de desarrollo la optimización de las consultas detectadas.",Infraestructura y Servidores
+KB-TEL-001,Cómo resolver: Teléfono IP sin servicio,Telefonía,Teléfono IP sin servicio,Telefonía IP,El teléfono IP de mi escritorio no tiene tono. | No puedo hacer llamadas externas desde mi extensión. | El teléfono dice registrando y nunca se conecta.,Registro SIP caído en el teléfono o VLAN de voz mal asignada.,"1. Reiniciar el teléfono y verificar la alimentación PoE.
+2. Revisar el puerto del switch y la VLAN de voz.
+3. Verificar el registro de la extensión en la central telefónica.
+4. Reasignar o reconfigurar la extensión.
+5. Realizar una llamada de prueba interna y externa.",Redes y Comunicaciones

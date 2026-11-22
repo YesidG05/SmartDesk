@@ -1,0 +1,6 @@
+ticket_id,fecha_creacion,fecha_resolucion,titulo,descripcion_falla,categoria,subcategoria,criticidad,documentacion_solucion,tiempo_resolucion_min,agente
+SD-0001,2026-10-14T15:03,2026-10-14T15:07,"No puedo conectarme a la VPN desde mi casa, se queda en conectando","No puedo conectarme a la VPN desde mi casa, se queda en conectando",Redes y Conectividad,VPN: falla individual,Media,Se realiza restablecimiento de credenciales las cuales no permitían la conexión con la VPN,56.0,Agente 2
+SD-0003,2026-10-15T15:21,2026-11-12T13:38,VPN no conecta,VPN no conecta,Redes y Conectividad,VPN: falla individual,Media,Restablecer contraseña de usuario,15.0,Agente 2
+SD-0002,2026-10-15T15:20,2026-11-12T13:39,Mi equipo no enciende,Mi equipo no enciende,Hardware,Falla en disco duro portatil,Alta,Reinstalacion sistema operativo por falla en el disco,180.0,Agente 3
+SD-0004,2026-11-12T13:37,2026-11-12T13:39,Impresora no imprime,Impresora no imprime,Hardware,Impresora no imprime o atasco,Baja,Reinicio de impresora y realizar test de impresion,20.0,Agente 1
+SD-0005,2026-11-12T13:42,2026-11-12T13:43,Falla en sistema operativo pantallazo azul,Falla en sistema operativo pantallazo azul,Hardware,Falla en sistema operativo,Alta,Reinstalacion de sistema operativo por pantallazo azul,150.0,Agente 1

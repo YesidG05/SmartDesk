@@ -1,0 +1,15 @@
+{
+  "siguiente": 7,
+  "abiertos": [
+    {
+      "ticket_id": "SD-0006",
+      "descripcion": "Pantallazo azul",
+      "categoria": "Hardware",
+      "subcategoria": "Monitor o pantalla sin imagen",
+      "criticidad": "Media",
+      "minutos_est": 18.0,
+      "agente_id": "A3",
+      "asignado_en": "2026-11-12T13:44"
+    }
+  ]
+}

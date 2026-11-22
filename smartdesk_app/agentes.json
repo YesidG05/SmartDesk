@@ -1,0 +1,130 @@
+{
+  "_nota": "EDITA este archivo con tus 4 agentes reales: nombre, turno, almuerzo y habilidades (0 a 1 por categoria; 1 = experto). dias_laborales: 0=lunes ... 6=domingo. Las categorias que no aparezcan usan habilidad_por_defecto.",
+  "habilidad_por_defecto": 0.5,
+  "agentes": [
+    {
+      "id": "A1",
+      "nombre": "Agente 1",
+      "turno": [
+        "07:00",
+        "16:00"
+      ],
+      "almuerzo": [
+        "12:00",
+        "13:00"
+      ],
+      "dias_laborales": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ausente": false,
+      "habilidades": {
+        "Accesos y Cuentas": 1.0,
+        "Hardware": 1.0,
+        "Software": 0.8,
+        "Correo y Colaboración": 0.8,
+        "Telefonía": 0.5,
+        "Redes y Conectividad": 0.4,
+        "Aplicaciones Corporativas": 0.3,
+        "Seguridad de la Información": 0.3,
+        "Infraestructura y Servidores": 0.2
+      }
+    },
+    {
+      "id": "A2",
+      "nombre": "Agente 2",
+      "turno": [
+        "08:00",
+        "17:00"
+      ],
+      "almuerzo": [
+        "13:00",
+        "14:00"
+      ],
+      "dias_laborales": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ausente": false,
+      "habilidades": {
+        "Redes y Conectividad": 1.0,
+        "Telefonía": 1.0,
+        "Infraestructura y Servidores": 0.8,
+        "Hardware": 0.7,
+        "Software": 0.6,
+        "Accesos y Cuentas": 0.5,
+        "Correo y Colaboración": 0.5,
+        "Seguridad de la Información": 0.4,
+        "Aplicaciones Corporativas": 0.3
+      }
+    },
+    {
+      "id": "A3",
+      "nombre": "Agente 3",
+      "turno": [
+        "09:00",
+        "18:00"
+      ],
+      "almuerzo": [
+        "12:00",
+        "13:00"
+      ],
+      "dias_laborales": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ausente": false,
+      "habilidades": {
+        "Aplicaciones Corporativas": 1.0,
+        "Correo y Colaboración": 1.0,
+        "Software": 1.0,
+        "Accesos y Cuentas": 0.7,
+        "Hardware": 0.5,
+        "Infraestructura y Servidores": 0.5,
+        "Redes y Conectividad": 0.4,
+        "Seguridad de la Información": 0.3,
+        "Telefonía": 0.3
+      }
+    },
+    {
+      "id": "A4",
+      "nombre": "Agente 4",
+      "turno": [
+        "10:00",
+        "19:00"
+      ],
+      "almuerzo": [
+        "13:00",
+        "14:00"
+      ],
+      "dias_laborales": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "ausente": false,
+      "habilidades": {
+        "Seguridad de la Información": 1.0,
+        "Infraestructura y Servidores": 1.0,
+        "Accesos y Cuentas": 0.9,
+        "Redes y Conectividad": 0.7,
+        "Aplicaciones Corporativas": 0.6,
+        "Software": 0.6,
+        "Correo y Colaboración": 0.5,
+        "Telefonía": 0.5,
+        "Hardware": 0.4
+      }
+    }
+  ]
+}
